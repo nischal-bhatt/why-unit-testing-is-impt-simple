@@ -51,4 +51,20 @@ public class CalculatorTest {
         int d = calculator.divide(10,2);
         assertEquals(5,d);
     }
+
+    @Test
+    void divider1()
+    {
+        Calculator calculator = new Calculator();
+        assertThrows(IllegalArgumentException.class, () -> calculator.divide(9,10));
+
+    }
+
+    @Test
+    void divider12()
+    {
+        Calculator calculator = new Calculator();
+         calculator.divide(99,100);
+
+    }
 }
