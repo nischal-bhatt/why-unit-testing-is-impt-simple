@@ -63,7 +63,7 @@ public class CalculatorTest {
     void divider12()
     {
         Calculator calculator = new Calculator();
-         assertDoesNotThrow(()->calculator.divide(99,100));
+         assertDoesNotThrow(()->calculator.divide(33,100));
 
     }
 }

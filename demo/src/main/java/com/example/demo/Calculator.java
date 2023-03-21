@@ -36,7 +36,7 @@ public class Calculator {
             System.out.println("all good");
         }else
         {
-            if (a == 99)
+            if (a == 33)
             {
                 return;
             }
