@@ -43,4 +43,12 @@ public class CalculatorTest {
         int mul = calculator.multiply(10,9);
         assertEquals(90,mul);
     }
+
+    @Test
+    void divider()
+    {
+        Calculator calculator = new Calculator();
+        int d = calculator.divide(10,2);
+        assertEquals(5,d);
+    }
 }
