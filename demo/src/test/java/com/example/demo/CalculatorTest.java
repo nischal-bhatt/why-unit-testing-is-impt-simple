@@ -2,8 +2,7 @@ package com.example.demo;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest {
 
@@ -64,7 +63,7 @@ public class CalculatorTest {
     void divider12()
     {
         Calculator calculator = new Calculator();
-         calculator.divide(99,100);
+         assertDoesNotThrow(()->calculator.divide(99,100));
 
     }
 }
